@@ -30,15 +30,15 @@ function Commoncard({ id, img, img2, title, rate, quantity }) {
     const send = (e) => {
         console.log(e, "eeee")
         dispatch(ADD_CART(e))
-        let find = data.findIndex(item => item.id === e.id); 
-        find === -1 ?  toast.success("This is item  added to cart"):  toast.error("This item is alredy in the Cart");
+        let find = data.findIndex(item => item.id === e.id);
+        find === -1 ? toast.success("This is item  added to cart") : toast.error("This item is alredy in the Cart");
     }
 
     const SendWishlist = (e) => {
         console.log(e, "eeee")
-        dispatch(ADD_WISHLIST(e)) 
-        let find = data2.findIndex(item => item.id === e.id); 
-        find === -1 ?  toast.success("This item is added to Wishlist"):  toast.error("This item is alredy in the Wishlist");
+        dispatch(ADD_WISHLIST(e))
+        let find = data2.findIndex(item => item.id === e.id);
+        find === -1 ? toast.success("This item is added to Wishlist") : toast.error("This item is alredy in the Wishlist");
     }
 
     return (

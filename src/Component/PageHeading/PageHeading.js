@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './pageHeading.css'
 
-const PageHeading = ({pageTitle='pageTitle', goBackLink}) => {
+const PageHeading = ({ pageTitle = 'pageTitle', goBackLink }) => {
     return (
         <div>
             <div className="breadcrumb-area">
@@ -15,7 +15,7 @@ const PageHeading = ({pageTitle='pageTitle', goBackLink}) => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default PageHeading

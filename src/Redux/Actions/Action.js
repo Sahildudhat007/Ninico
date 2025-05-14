@@ -29,7 +29,7 @@ export const DECREMENT_CART = (item) => {
 export const UPDATE_QUANTITY = (id, quantity) => {
     return {
         type: "UPDATE_QUANTITY",
-        payload: {id, quantity}
+        payload: { id, quantity }
     }
 }
 
